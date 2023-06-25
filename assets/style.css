@@ -1,0 +1,383 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    color: #777;
+    font-family: "Lato", sans-serif;
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+.nav-bar{
+    width: 100%;
+}
+
+.nav-list{
+    list-style: none;
+}
+
+.nav-item {
+    padding: 8px 16px;
+    display: inline-block;
+}
+.nav-item:hover>a,
+.nav-item:hover{
+    cursor: pointer;
+    color: black;
+    background-color: #ccc;
+}
+
+.nav-item > .item-link{
+    text-decoration: none;
+    color: #777;
+}
+
+.search-btn{
+    cursor: pointer;
+    padding: 8px 16px;
+}
+
+.search-btn:hover{
+    color: white;
+    background-color: #f44336;
+}
+
+/*********** END HEADER *************/
+
+.slider{
+    z-index: -1;
+    min-height: 931px;
+    position: relative;
+    background-image: url('/assets/img/parallax1.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.75;
+}
+
+.slider .slider-logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 5px 24px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+.About-section{
+    
+}
+
+.container{
+    margin: 0px 397px;
+    padding: 64px 16px;
+}
+
+.heading, .subheading{
+    text-align: center;
+}
+
+.heading{
+    text-transform: uppercase;
+    font-size: 24px;
+    margin: 10px 0;
+    font-weight: 500;
+}
+
+.subheading{
+    font-style: italic;
+    margin: 15px 0;
+}
+
+.begin-des{
+    margin: 15px 0;
+    
+}
+
+.about-content{
+    display: flex;
+    margin-top: 40px;
+    /* justify-content: space-between; */
+}
+
+.about-img > img{
+    border-radius: 4px;
+    padding: 12px 24px;
+    width: 426px;
+    opacity: 0.7;
+}
+
+.about-img > img:hover{
+    opacity: 1;
+}
+
+.about-des{
+    width: 50%;
+    padding: 12px 24px;
+}
+
+.user-icon{
+    
+    margin: 0 15px;
+    text-align: center;
+}
+.icon-text{
+    margin-left: 15px;
+    font-weight: 800;
+}
+
+.talent-text{
+    text-align: center;
+    margin: 18px 0;
+    padding: 16px 0;
+    font-size: 18px;
+}
+
+.talent-bar{
+    list-style: none;
+}
+
+.icon-talent-title{
+    letter-spacing: 10px;
+    margin-left: 10px;
+}
+
+.talent-name{
+    margin: 15px 0;
+}
+
+.big-bar{
+    background-color: #f1f1f1;
+    height: 35px;
+}
+
+#photography{
+    width: 90%;
+}
+
+#photoshop{
+    width: 75%;
+}
+
+#web-des{
+    width: 85%;
+}
+
+.small-bar{
+    background-color: #616161;
+    height: 35px;
+    color: white;
+    text-align: center;
+    line-height: 35px;
+}
+
+
+/* CENTER ROW */
+
+.center-row{
+    justify-content: space-around;
+    font-size: 16px;
+    padding: 16px 0;
+    color: white;
+    background-color: #616161;
+    display: flex;
+}
+
+.center-row > .section{
+    text-align: center;
+}
+
+.center-row > .section > span{
+    font-size: 24px;
+}
+
+/* IMG ROW CENTER */
+
+
+.img2{
+    background-image: url(/assets/img/parallax2.jpg);
+}
+
+.img3 {
+    background-image: url(/assets/img/parallax3.jpg);
+}
+.img2, .img3{
+    min-height: 400px;
+    background-attachment:fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.75;
+}
+
+.img2-text, .img3-text{
+    line-height: 400px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-size: 36px;
+    color: white;
+}
+
+.port-img-list{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-row-gap: 16px;
+}
+
+.port-img-list .port-img{
+    padding: 0px 8px;
+}
+
+.port-img-list .port-img img{
+    width: 100%;
+}
+
+.load-more-btn{
+    text-align: center;
+    margin-top: calc(64px - 18px - 6px);
+}
+
+.load-more-btn button{
+    text-transform: uppercase;
+    padding: 12px 24px;
+    border: none;
+    font-size: inherit;
+    cursor: pointer;
+    white-space: nowrap;
+    line-height: 1.8;
+}
+
+.load-more-btn button:hover{
+    background-color: #ccc;
+}
+
+
+.contact{
+    margin-bottom: 64px;
+}
+
+.map-img{
+    width: calc(100%/3);
+    float: left;
+    padding: 0 16px;
+}
+
+.map-img img{
+    border-radius: 4px;
+    width: 100%;
+}
+
+.information{
+    float: left;
+    margin: 16px 0;
+    padding: 0 16px;
+}
+
+.contact-icons{
+    margin-bottom: 16px;
+    font-size: 18px;
+}
+
+.contact-icons i {
+    margin-right: 16px;
+}
+
+.input-row{
+    margin: 0 -16px 8px -16px;
+    padding: 0 8px;
+}
+
+.input-half{
+    display: inline-block;
+    padding: 0 8px;
+}
+
+.input-half input{
+    border: 1px solid #ccc;
+    padding: 14px 114px 14px 8px;
+}
+
+.note{
+    margin: 15px 0;
+}
+
+.mess-input{
+    border: 1px solid #ccc;
+    padding-left: 8px;
+    padding-right: 426px;
+}
+
+.mess-input {
+    display: block;
+    line-height: 45px;
+}
+
+.mess-btn{
+    border: none;
+    background-color: black;
+    color: white;
+    float: right;
+    margin: 16px 0;
+    padding: 14px 18px;
+    display: block;
+}
+.mess-btn:hover{
+    color: black;
+    background-color: #f1f1f1;
+}
+.clear{
+    clear: both;
+}
+.footer{
+    padding: 64px 0;
+    background-color: #777;
+    text-align: center;
+}
+
+.footer-btn {
+    text-decoration: none;
+    color: #777;
+    background-color: #f1f1f1;
+    padding: 12px 16px;
+}
+
+.footer-btn i {
+    margin-right: 16px;
+}
+
+.footer-icon-list{
+    font-size: 24px;
+    margin: 16px 0;
+}
+
+
+.footer-text a, .footer-icon-list a {
+    color: #f1f1f1;
+}
+
+.footer-text{
+    color: #f1f1f1;
+    margin: 15px 0;
+}
+
+.footer:hover{
+    background-color: black;
+}
