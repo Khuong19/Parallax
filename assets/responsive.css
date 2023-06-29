@@ -1,0 +1,109 @@
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .container{
+        margin: auto;
+    }
+
+    .information{
+        width: 66.66666%;
+    }
+
+    .map-img{
+        width: 33.33333%;
+    }
+    .contact-input{
+        width: 100%;
+    }
+    .input-row {
+        display: flex;
+    }
+}
+
+
+
+@media screen and (max-width: 600px){
+    
+    .search-btn{
+        display: none;
+    }
+
+    .nav-list{
+        height: 43px;
+        overflow: hidden;
+    }
+    .nav-list .nav-item{
+        display: block;
+    }
+    .nav-list .home{
+        display: inline-block;
+    }
+    .nav-item .fa-solid{
+        display: none;
+    }
+    .bar-btn{
+        display: inline-block;
+        cursor: pointer;
+        padding: 8px 16px;
+    }
+    
+    .bar-btn:hover{
+        color: white;
+        background-color: #f44336;
+    }
+
+    .container{
+        margin: auto;
+    }
+    .about-content{
+        justify-content: center;
+    }
+    .about-des{
+        display: none;
+    }
+
+    .about-img img{
+        width: 100%;
+    }
+
+    .center-row{
+        flex-direction: column;
+    }
+
+    .center-row .section{
+        margin: 16px auto;
+    }
+
+    .port-img-list{
+        display: block;
+        grid-row-gap: 0 ;
+        padding: 0 8px;
+    }
+
+    .port-img{
+        margin-top: -8px;
+    }
+
+    .port-row2{
+        margin-top: 16px;
+    }
+
+    .map-img{
+        width: 100%;
+    }
+
+    .information{
+        width: 100%;
+    }
+
+    .input-half{
+        display: block;
+        width: 100%;
+    }
+
+    .input-half input{
+        width: 100%;
+    }
+
+    .mess-input{
+        width: 100%;
+    }
+}

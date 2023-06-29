@@ -54,6 +54,11 @@ body{
     background-color: #f44336;
 }
 
+.bar-btn{
+    display: none;
+}
+
+
 /*********** END HEADER *************/
 
 .slider{
@@ -212,11 +217,11 @@ body{
 
 
 .img2{
-    background-image: url(/assets/img/parallax2.jpg);
+    background-image: url(./img/parallax2.jpg);
 }
 
 .img3 {
-    background-image: url(/assets/img/parallax3.jpg);
+    background-image: url(./img/parallax3.jpg);
 }
 .img2, .img3{
     min-height: 400px;
@@ -236,14 +241,24 @@ body{
     color: white;
 }
 
-.port-img-list{
+
+.port-row1{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-row-gap: 16px;
+    margin-bottom: 8px;
+}
+
+.port-row2{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
 }
 
 .port-img-list .port-img{
     padding: 0px 8px;
+}
+
+.port-img-list .port-img:hover{
+    opacity: 0.6;
 }
 
 .port-img-list .port-img img{
@@ -286,6 +301,7 @@ body{
 }
 
 .information{
+    width: 66.6666%;
     float: left;
     margin: 16px 0;
     padding: 0 16px;
@@ -301,33 +317,35 @@ body{
 }
 
 .input-row{
+    display: flex;
     margin: 0 -16px 8px -16px;
     padding: 0 8px;
 }
 
 .input-half{
-    display: inline-block;
+    display: flex;
+    flex: 1;
     padding: 0 8px;
 }
 
 .input-half input{
+    width: 100%;
     border: 1px solid #ccc;
-    padding: 14px 114px 14px 8px;
+    padding: 14px 0px;
+    padding-left: 8px;
 }
 
 .note{
     margin: 15px 0;
 }
 
-.mess-input{
-    border: 1px solid #ccc;
-    padding-left: 8px;
-    padding-right: 426px;
-}
 
 .mess-input {
+    border: 1px solid #ccc;
+    padding-left: 8px;
     display: block;
     line-height: 45px;
+    width: 100%;
 }
 
 .mess-btn{
@@ -342,6 +360,11 @@ body{
 .mess-btn:hover{
     color: black;
     background-color: #f1f1f1;
+}
+
+.mess-btn span{
+    font-family: "Lato", sans-serif;
+    font-size: 15px;
 }
 .clear{
     clear: both;
